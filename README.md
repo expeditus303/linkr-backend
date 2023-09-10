@@ -4,11 +4,15 @@
 
 A API do projeto Linkr é a espinha dorsal de uma emocionante plataforma de rede social para compartilhamento de links e interações sociais. Este poderoso servidor foi construído com tecnologias de ponta, como Node.js, Express, e Postgres, e oferece uma série de recursos e funcionalidades para fornecer uma experiência de usuário excepcional.
 
-![Linkr Demo]()
+![Linkr Demo](https://github.com/kadioba/projeto19-linkr-front/blob/main/demo-images/Desktop%20-%2018.png)
 
 🚀 **[Linkr Live Demo](https://projeto19-linkr-front-77u8lzs42-kadioba.vercel.app/)**
 
+🪪 Você pode usar as seguitnes credenciais de teste **email**: "teste@teste.com" e **senha**: "teste"
+
 ⚠️ A demonsntração pode apresentar instabilidades devido ao uso de servidores gratuitos
+
+Link de demosntração da API: https://linkrapi-wcod.onrender.com
 
 Repositório front-end: [https://github.com/kadioba/projeto19-linkr-front](https://github.com/kadioba/projeto19-linkr-front)
 
