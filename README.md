@@ -5,7 +5,7 @@
 The API of the Linkr project acts as the backbone for an exciting social networking platform designed for sharing links and social interactions. This robust server is built using cutting-edge technologies such as Node.js, Express, and Postgres, offering a plethora of features and functionalities to deliver an exceptional user experience.
 
 
-![Linkr Demo](https://github.com/kadioba/projeto19-linkr-front/blob/main/demo-images/Desktop%20-%2027.png)
+![Linkr demo](https://user-images.githubusercontent.com/115481094/270741486-42a66a26-a857-49d1-a285-d34c64d00338.gif)
 
 🚀 **[Linkr Live Demo](https://projeto19-linkr-front-77u8lzs42-kadioba.vercel.app/)**
 
