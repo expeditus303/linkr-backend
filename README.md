@@ -1,101 +1,95 @@
 # Linkr - Backend
 
-## Descrição
+## Description
 
-A API do projeto Linkr é a espinha dorsal de uma emocionante plataforma de rede social para compartilhamento de links e interações sociais. Este poderoso servidor foi construído com tecnologias de ponta, como Node.js, Express, e Postgres, e oferece uma série de recursos e funcionalidades para fornecer uma experiência de usuário excepcional.
+The API of the Linkr project acts as the backbone for an exciting social networking platform designed for sharing links and social interactions. This robust server is built using cutting-edge technologies such as Node.js, Express, and Postgres, offering a plethora of features and functionalities to deliver an exceptional user experience.
+
 
 ![Linkr Demo](https://github.com/kadioba/projeto19-linkr-front/blob/main/demo-images/Desktop%20-%2027.png)
 
 🚀 **[Linkr Live Demo](https://projeto19-linkr-front-77u8lzs42-kadioba.vercel.app/)**
 
-🪪 Você pode usar as seguitnes credenciais de teste **email**: "teste@teste.com" e **senha**: "teste"
+🪪 You can use the following test credentials email: "teste@teste.com" and password: "teste"
 
-⚠️ A demonsntração pode apresentar instabilidades devido ao uso de servidores gratuitos
+⚠️ The demo may exhibit instability due to the use of free servers.
 
-Link de demosntração da API: https://linkrapi-wcod.onrender.com
+API Demo Link: https://linkrapi-wcod.onrender.com
 
-Repositório front-end: [https://github.com/kadioba/projeto19-linkr-front](https://github.com/kadioba/projeto19-linkr-front)
+Frontend Repository: https://github.com/expeditus303/linkr-frontend
 
-## Sobre
+## About
 
-O Linkr é mais do que apenas uma rede social; é um espaço digital onde os usuários podem compartilhar links interessantes com o mundo e interagir com outros entusiastas da web. Algumas de suas principais características incluem:
+Linkr is more than just a social network; it’s a digital space where users can share intriguing links with the world and interact with other web enthusiasts. Some of its key features include:
 
-- **Publicação de Links:** Os usuários podem compartilhar links para artigos, vídeos, imagens e muito mais.
+- **Link Posting:** Users can share links to articles, videos, images, and more.
+- **Featured Hashtags:** Hashtags are highlighted in each post, allowing users to quickly explore specific topics.
+- **Customized Feed:** Each user’s timeline features posts from other users they follow.
+- **Comments and Reposts:** Users can comment on posts and even repost them on their own timelines.
+- **Following and Followers:** Users can follow other users and see who is following them.
+- **User Search:** A search functionality allows users to easily find other users.
+- **Secure Authentication:** Authentication is handled securely, ensuring user information protection.
 
-- **Hashtags em Destaque:** As hashtags são destacadas em cada post, permitindo que os usuários explorem tópicos específicos rapidamente.
+This project was developed with passion and dedication to create a unique link-sharing and social interaction experience on the web.
 
-- **Feed Personalizado:** A timeline de cada usuário apresenta posts de outros usuários que eles seguem.
-
-- **Comentários e Repostagens:** Os usuários podem comentar em posts e até mesmo repostá-los em sua própria timeline.
-
-- **Seguindo e Seguidores:** Os usuários podem seguir outros usuários e ver quem os segue.
-
-- **Pesquisa de Usuários:** Uma funcionalidade de busca permite aos usuários encontrar facilmente outros usuários.
-
-- **Autenticação Segura:** A autenticação é feita de forma segura, garantindo a proteção das informações dos usuários.
-
-Este projeto foi desenvolvido com paixão e dedicação para criar uma experiência única de compartilhamento de links e interação social na web.
-
-### Tecnologias
+### Technologies
 
 - Node.js
 - Express.js
 - Postgres
-- Joi (para validação de dados)
-- Outras bibliotecas e ferramentas essenciais
+- Joi (for data validation)
+- Other essential libraries and tools
 
-### Endpoints da API
+### API Endpoints
 
-A API oferece os seguintes endpoints:
+The API offers the following endpoints:
 
-#### Autenticação
+#### Authentication
 
-- `POST /api/auth/signup`: Rota para o registro de novos usuários.
-- `POST /api/auth/signin`: Rota para o login de usuários existentes.
-- `POST /api/auth/signout`: Rota para o logout de usuários autenticados.
+- `POST /api/auth/signup`: Route for registering new users.
+- `POST /api/auth/signin`: Route for logging in existing users.
+- `POST /api/auth/signout`: Route for logging out authenticated users.
 
 #### Posts
 
-- `POST /api/posts`: Rota para criar um novo post.
-- `GET /api/posts`: Rota para listar todos os posts.
-- `GET /api/posts/:postId`: Rota para obter detalhes de um post específico.
-- `PUT /api/posts/:postId`: Rota para editar um post existente.
-- `DELETE /api/posts/:postId`: Rota para excluir um post.
+- `POST /api/posts`: Route to create a new post.
+- `GET /api/posts`: Route to list all posts.
+- `GET /api/posts/:postId`: Route to get details of a specific post.
+- `PUT /api/posts/:postId`: Route to edit an existing post.
+- `DELETE /api/posts/:postId`: Route to delete a post.
 
-#### Comentários
+#### Comments
 
-- `POST /api/posts/:postId/comments`: Rota para adicionar um comentário a um post.
-- `GET /api/posts/:postId/comments`: Rota para listar todos os comentários de um post.
+- `POST /api/posts/:postId/comments`: Route to add a comment to a post.
+- `GET /api/posts/:postId/comments`: Route to list all comments on a post.
 
 #### Hashtags
 
-- `GET /api/hashtags`: Rota para obter as hashtags em destaque.
-- `GET /api/hashtags/:hashtag/posts`: Rota para listar os posts relacionados a uma hashtag específica.
+- `GET /api/hashtags`: Route to get featured hashtags.
+- `GET /api/hashtags/:hashtag/posts`: Route to list posts related to a specific hashtag.
 
-#### Seguindo e Seguidores
+#### Following and Followers
 
-- `POST /api/users/:userId/follow`: Rota para seguir um usuário.
-- `GET /api/users/:userId/followers`: Rota para listar os seguidores de um usuário.
-- `GET /api/users/:userId/following`: Rota para listar os usuários seguidos por um usuário.
+- `POST /api/users/:userId/follow`: Route to follow a user.
+- `GET /api/users/:userId/followers`: Route to list a user’s followers.
+- `GET /api/users/:userId/following`: Route to list the users followed by a user.
 
-#### Pesquisa de Usuários
+#### User Search
 
-- `GET /api/users/search`: Rota para pesquisar por outros usuários com base em critérios específicos.
+- `GET /api/users/search`: Route to search for other users based on specific criteria.
 
-Estes endpoints permitem aos usuários do Linkr interagir com a plataforma de várias maneiras, desde a criação de posts até a exploração de hashtags populares e a interação com outros usuários. A API foi projetada para ser segura e eficiente, garantindo uma experiência de usuário incrível.
+These endpoints allow Linkr users to interact with the platform in various ways, from creating posts to exploring popular hashtags and interacting with other users. The API is designed to be secure and efficient, ensuring an incredible user experience.
 
-## Como Executar
+## How to Run
 
-Siga as etapas abaixo para configurar e executar o backend do Linkr em sua máquina local:
+Follow the steps below to set up and run the Linkr backend on your local machine:
 
-1. Clone o repositório do backend em sua máquina:
+1. Clone the backend repository on your machine:
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-linkr-backend
-cd projeto-linkr-backend
+git clone https://github.com/expeditus303/linkr-backend.git
 ```
 
-2. Crie um arquivo `.env` no diretório raiz do projeto e configure as seguintes variáveis de ambiente:
+2. Create a .env file in the project's root directory and configure the following environment variables:
 
 ```dotenv
 DB_USERNAME=postgres
@@ -106,29 +100,29 @@ DB_NAME=linkr
 DATABASE_URL=postgres://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 ```
 
-3. Instale as dependências do projeto executando o seguinte comando:
+3. Install the project dependencies by running the following command:
 
 ```bash
 npm install
 ```
 
-4. Execute o comando para criar as entidades no banco de dados:
+4. Run the command to create the entities in the database:
 
 ```bash
 npm run migrei:up
 ```
 
-5. Inicie o servidor do backend:
+5. Start the backend server:
 
 ```bash
 npm start
 ```
 
-Agora, o backend estará em execução em `http://localhost:5000`, pronto para atender às solicitações da aplicação frontend.
+Now, the backend will be running at http://localhost:5000, ready to serve requests from the frontend application.
 
-Certifique-se de ter o Node.js e o npm instalados em sua máquina.
+Make sure you have Node.js and npm installed on your machine.
 
-Sinta-se à vontade para explorar e integrar o backend com a aplicação frontend Linkr! Se você encontrar algum problema ou tiver sugestões de melhoria, não hesite em relatar ou contribuir para o projeto.
+Feel free to explore and integrate the backend with the Linkr frontend application! If you encounter any issues or have suggestions for improvement, do not hesitate to report or contribute to the project.
 
-Aproveite o uso do Linkr! 🌐
+Enjoy using Linkr! 🌐
 
